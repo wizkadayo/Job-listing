@@ -1,0 +1,337 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+.auth-buttons button{
+    margin-left: 10px;
+    padding: 6px 12px;
+    /* border: none; */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+.login{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+.signup{
+    background-color: green;
+    border: none;
+    color: white;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 40px ;
+}
+.hero-text{
+    max-width: 50%;
+    flex: 1;
+}
+.hero-text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #111;
+}
+.hero-text span{
+    color: green;
+    font-weight: bold;
+}
+.hero-text p{
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+.search-bar{
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.search-bar input{
+    padding: 5px;
+    flex: 1;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-bar button{
+    padding: 5px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius:  4px;
+    cursor: pointer;
+}
+.popular a{
+    margin-right: 10px;
+    color: green;
+}
+.hero-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero-img img{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+@media (max-width: 768px){
+    .hero{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .nav{
+        display: grid;
+        grid-template-rows: auto;
+    }
+}
+
+.categories{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fb;
+}
+.categories h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.category-card{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+.category-card:hover{
+    transform: translateY(-5px);
+}
+.category-card img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.category-card p{
+    color: green;
+    font-size: 14px;
+}
+.category-card h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.how-it-works{
+    text-align: center;
+    padding: 50px 20px;
+}
+.how-it-works h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.steps{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.step{
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 00.5);
+    transition: transform 0.3s;
+}
+.step:hover{
+    transform: translateY(-5px);
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-description{
+    color: green;
+}
+.employers-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.employers-text{
+    flex: 1;
+    min-width: 300px;
+}
+.employers-image img{
+    max-width: 100%;
+    height: 450px;
+    flex: 1;
+    min-width: 300px;
+}
+.employers-text h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.employers-text p{
+    font-size: 1rem;
+    color: #be1616c0;
+    margin-bottom: 20px;
+}
+.employers-list{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.employers-list li{
+    margin-bottom: 10px;
+    color: green;
+    font-weight: 500;
+}
+.post-job-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.post-job-btn:hover{
+    transform: translateY(-5px);
+    color: black;
+}
+.cta-section {
+  background: linear-gradient(to bottom right, #0d9d27, #20b83f);
+  text-align: center;
+  padding: 50px 20px;
+}
+.cta-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.cta-buttons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta-buttons .create {
+  background-color: #fff;
+  color: green;
+}
+.cta-buttons .browse {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+footer {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #ccc;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.social-icons ion-icon {
+  font-size: 20px;
+  color: #fff;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1.5px solid #333;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.bright{
+    color: red;
+}

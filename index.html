@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/web dev.svg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1 class="logo">JobListing</h1>
+            <nav>
+                <a href="">How it Works</a>
+                <a href="">Find Jobs</a>
+                <a href="">For Employers</a>
+            </nav>
+            <div class=" auth-buttons">
+                <button class="login">Login</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Find the perfect job for your <span>skills</span></h2>
+                <p>Connect with top employers and get hired for remote, contract, or full-time positions</p>
+                <div class="search-bar">
+                    <input type="text" id="job-search" placeholder="Search for jobs (e.g. Web developer, Design)">
+                    <button onclick="searchjobs()">Search</button>
+                </div>
+                <p class="popular">
+                    Popular: <a href="">Web Development</a>
+                    <a href="">Design</a>
+                    <a href="">Marketing</a>
+                    <a href="Data science"></a>
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="/images/undraw_interview_yz52.svg" alt="">
+            </div>
+        </section>
+    </main>
+
+    
+<section id="employers-section"></section>
+
+
+    <section class="categories">
+        <h2>Explore Job categories</h2>
+        <div id="category-list"  class="category-grid"></div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How JobListing Works</h2>
+        <div class="steps" id="steps-container"></div>
+    </section>
+
+    <div class="cta-section">
+    <h1>Ready to find your next opportunity?</h1>
+    <p>Join thousands of professionals who have found their ideal jobs through JobListing</p>
+    <div class="cta-buttons">
+      <button class="create">Create an Account</button>
+      <button class="browse">Browse Jobs</button>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>JobListing</h4>
+        <p>Connecting talent with opportunity</p>
+        <div class="social-icons">
+          <ion-icon name="logo-facebook" title="Facebook"></ion-icon>
+          <ion-icon name="logo-twitter" title="X"></ion-icon>
+          <ion-icon name="logo-linkedin" title="Linkedin"></ion-icon>
+          <ion-icon name="logo-instagram" title="Instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>For Job Seekers</h4>
+        <ul>
+          <li>Browse Jobs</li>
+          <li>Career Advice</li>
+          <li>Resume Tips</li>
+          <li>Find Remote Jobs</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 JobListing. All rights reserved. PREPARED BY <BRIGHT- class="bright">BRIGHT</BRIGHT->
+    </div>
+  </footer>
+    
+
+    
+
+
+
+
+    <script src="./js.js"></script>
+</body>
+</html>
